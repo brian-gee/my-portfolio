@@ -1,55 +1,84 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Brian</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <script src="https://kit.fontawesome.com/4d502ce4f5.js" crossorigin="anonymous"></script>
+    <title>Brian's Portfolio</title>
 </head>
 
-<header>
-    <div class="header">
-        <h1>
-            <a href="">Brian Geertsma</a>
-        </h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#about-me">About Me</a>
-                </li>
-                <li>
-                    <a href="#work">Work</a>
-                </li>
-                <li>
-                    <a href="#contact-me">Contact Me</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-</header>
-
 <body>
-    <article class="content">
-        <div id="about-me" class="about-me">
-            <h1>About me</h1>
+
+    <!-- Start of hero section  -->
+    <div class="hero">
+        <nav>
+        <h1 class="logo"></i>Brian's Portfolio</h1>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="https://github.com/brian-gee" target="_blank"><i class="fa-brands fa-github-alt"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/brian-geertsma-983052240" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+        </ul>
+        </nav>
+
+        <!-- Start of content section-->
+        <div class="content">
+            <h4>Hello, my name is</h4>
+            <h1>Brian Geertsma</h1>
+            <h3>I'm a <span class="web">Web Developer</span></h3>
         </div>
-
-        <div id="work" class="work">
-            <h1>Work</h1>
-        </div>
-
-        <div id="contact-me" class="contact-me">
-            <h1>Contact Me</h1>
-        </div>
-    </article>
-</body>
-
-
-<footer>
-    <h2>Made with love by Brian Geertsma</h2>
-    <div>
-        <a href="">Read Our Privacy Policy</a>
-        <br>
-        &copy; 2022 BBGEE, Inc.
     </div>
-</footer>
+
+
+    <!-- Start of about section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <article>
+            <img class="memeoji" src="./assets/images/memojiii.png" alt="">
+            <div class="text">
+                <p>Hello! My name is Brian and I'm an aspiring full stack developer currently taking part in a full stack development bootcamp at the University of Miami. I've always had a passion for technology ever since I started to really use computers for gaming in middle school. Over time this passion has evolved more into development work as well as beginning to use linux for my main computer and learning a lot about the operating system and how to customize it to my liking.</p>
+            </div>
+
+        </article>
+
+    </section>
+
+    <!-- Start of projects section -->
+    <section id="projects" class="projects">
+        <h2>Projects I'm proud of</h2>
+        <article>
+            <div class="text">
+                <h4>Latest Project</h4>
+                <h3>Horiseon Site</h3>
+                <p class="black-box">This is one of the first projects I have worked on since starting my full stack devloper bootcamp with the University of Miami. I was tasked to refactor a provided code base so that navigation was properly working. A bulk of the project was consolidating the css code to remove repetative styling to make the code more readable and clean. - <a href="https://brian-gee.github.io/horiseon-website/" target="_blank">Project Link</a></p>
+                <h4>Technologies used include: </h4>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ul>
+            </div>
+            <a class="proj-img" href="https://brian-gee.github.io/horiseon-website/" target="_blank"><img src="./assets/images/horiseon-screenshot.png" alt="Screenshot of Horiseon website."></a>
+        </article>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <ul>
+        <a href="mailto: briange@tuta.io" target="_blank">briange@tuta.io</a>
+        <a href="https://github.com/brian-gee" target="_blank">Github</a>
+        <a href="https://www.linkedin.com/in/brian-geertsma-983052240" target="_blank">LinkedIn</a>
+        </ul>
+
+    </section>
+
+    <footer>
+        <h2>Brian Geertsma &middot; Web Developer</h2>
+        <ul>
+            <li><a href="https://github.com/brian-gee" target="_blank"><i class="fa-brands fa-github-alt"></i></a></li>
+        </ul>
+        <p><small>&copy;<script>document.write( new Date().getFullYear());</script> Brian Geertsma. All rights reserved.</small></p>
+    </footer>
+
+</body>
